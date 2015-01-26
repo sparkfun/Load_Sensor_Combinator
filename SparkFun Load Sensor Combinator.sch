@@ -7660,10 +7660,10 @@ to create telescoping shield.</text>
 </plain>
 <instances>
 <instance part="U$7" gate="G$1" x="132.08" y="12.7"/>
-<instance part="STANDOFF1" gate="G$1" x="243.84" y="38.1"/>
-<instance part="STANDOFF2" gate="G$1" x="238.76" y="38.1"/>
-<instance part="STANDOFF3" gate="G$1" x="233.68" y="38.1"/>
-<instance part="STANDOFF4" gate="G$1" x="228.6" y="38.1"/>
+<instance part="STANDOFF1" gate="G$1" x="246.38" y="25.4"/>
+<instance part="STANDOFF2" gate="G$1" x="241.3" y="25.4"/>
+<instance part="STANDOFF3" gate="G$1" x="236.22" y="25.4"/>
+<instance part="STANDOFF4" gate="G$1" x="231.14" y="25.4"/>
 <instance part="LOGO3" gate="G$1" x="109.22" y="5.08"/>
 <instance part="JP1" gate="G$1" x="83.82" y="86.36"/>
 <instance part="JP2" gate="G$1" x="106.68" y="86.36"/>
