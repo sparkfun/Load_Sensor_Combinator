@@ -8290,6 +8290,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 </part>
 <part name="JP5" library="SparkFun-Connectors" deviceset="M05" device="PTH"/>
 <part name="JP6" library="SparkFun-Connectors" deviceset="RJ45-8" device="PTH" value="RJ45"/>
+<part name="JP7" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -8317,6 +8318,9 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <text x="130.556" y="153.162" size="1.778" layer="97" rot="R90">Yellow</text>
 <text x="132.08" y="129.54" size="1.778" layer="97">Intentionally not-connected
 to create telescoping shield.</text>
+<text x="82.042" y="126.238" size="1.778" layer="97">NC</text>
+<text x="98.552" y="143.764" size="1.778" layer="97">Optional
+DS18S20</text>
 </plain>
 <instances>
 <instance part="U$7" gate="G$1" x="132.08" y="12.7"/>
@@ -8335,7 +8339,8 @@ to create telescoping shield.</text>
 </instance>
 <instance part="FRAME1" gate="V" x="147.32" y="0"/>
 <instance part="JP5" gate="G$1" x="124.46" y="139.7" rot="R270"/>
-<instance part="JP6" gate="JP1" x="96.52" y="139.7" rot="MR90"/>
+<instance part="JP6" gate="JP1" x="73.66" y="132.08" rot="MR0"/>
+<instance part="JP7" gate="G$1" x="104.14" y="137.16" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -8393,11 +8398,12 @@ to create telescoping shield.</text>
 <wire x1="119.38" y1="111.76" x2="119.38" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="119.38" x2="119.38" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="119.38" x2="86.36" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="119.38" x2="86.36" y2="132.08" width="0.1524" layer="91"/>
 <junction x="119.38" y="119.38"/>
 <pinref part="JP6" gate="JP1" pin="8"/>
 <label x="106.68" y="119.38" size="1.778" layer="95"/>
+<wire x1="119.38" y1="119.38" x2="86.36" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="119.38" x2="86.36" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="121.92" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A+" class="0">
@@ -8409,11 +8415,12 @@ to create telescoping shield.</text>
 <wire x1="124.46" y1="106.68" x2="124.46" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="3"/>
 <wire x1="124.46" y1="124.46" x2="124.46" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="124.46" x2="93.98" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="124.46" x2="91.44" y2="124.46" width="0.1524" layer="91"/>
 <junction x="124.46" y="124.46"/>
 <pinref part="JP6" gate="JP1" pin="5"/>
-<wire x1="93.98" y1="132.08" x2="93.98" y2="124.46" width="0.1524" layer="91"/>
 <label x="106.68" y="124.46" size="1.778" layer="95"/>
+<wire x1="81.28" y1="129.54" x2="91.44" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="129.54" x2="91.44" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A-" class="0">
@@ -8425,11 +8432,12 @@ to create telescoping shield.</text>
 <wire x1="127" y1="132.08" x2="127" y2="127" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="4"/>
 <wire x1="127" y1="127" x2="127" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="127" y1="127" x2="96.52" y2="127" width="0.1524" layer="91"/>
+<wire x1="127" y1="127" x2="93.98" y2="127" width="0.1524" layer="91"/>
 <junction x="127" y="127"/>
 <pinref part="JP6" gate="JP1" pin="4"/>
-<wire x1="96.52" y1="132.08" x2="96.52" y2="127" width="0.1524" layer="91"/>
 <label x="106.68" y="127" size="1.778" layer="95"/>
+<wire x1="81.28" y1="132.08" x2="93.98" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="132.08" x2="93.98" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="E-" class="0">
@@ -8441,11 +8449,36 @@ to create telescoping shield.</text>
 <pinref part="JP1" gate="G$1" pin="3"/>
 <wire x1="93.98" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="121.92" x2="88.9" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="121.92" x2="88.9" y2="132.08" width="0.1524" layer="91"/>
 <junction x="121.92" y="121.92"/>
 <pinref part="JP6" gate="JP1" pin="7"/>
 <label x="106.68" y="121.92" size="1.778" layer="95"/>
+<wire x1="121.92" y1="121.92" x2="88.9" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="121.92" x2="88.9" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="124.46" x2="81.28" y2="124.46" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="5V" class="0">
+<segment>
+<pinref part="JP6" gate="JP1" pin="3"/>
+<pinref part="JP7" gate="G$1" pin="3"/>
+<wire x1="81.28" y1="134.62" x2="96.52" y2="134.62" width="0.1524" layer="91"/>
+<label x="83.82" y="134.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TEMP_DAT" class="0">
+<segment>
+<pinref part="JP6" gate="JP1" pin="2"/>
+<pinref part="JP7" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="137.16" x2="96.52" y2="137.16" width="0.1524" layer="91"/>
+<label x="83.82" y="137.16" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="JP6" gate="JP1" pin="1"/>
+<pinref part="JP7" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="139.7" x2="96.52" y2="139.7" width="0.1524" layer="91"/>
+<label x="83.82" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
