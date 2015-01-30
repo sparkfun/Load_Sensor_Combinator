@@ -32,34 +32,34 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -175,17 +175,17 @@
 <text x="0.762" y="4.953" size="1.778" layer="16" font="vector" ratio="15" rot="MR90">v02</text>
 <text x="8.255" y="6.223" size="1.27" layer="21" font="vector" ratio="15" rot="R270">YLW</text>
 <text x="8.255" y="2.54" size="1.27" layer="22" font="vector" ratio="15" rot="MR90">SLD</text>
-<dimension x1="0" y1="0" x2="0" y2="17.78" x3="-7.62" y3="8.89" textsize="1.778" textratio="15" layer="47" unit="inch"/>
-<dimension x1="0" y1="17.78" x2="27.94" y2="17.78" x3="13.97" y3="31.75" textsize="1.778" textratio="15" layer="47" unit="inch"/>
-<dimension x1="2.54" y1="15.24" x2="25.4" y2="15.24" x3="13.97" y3="26.67" textsize="1.778" textratio="15" layer="47" unit="inch"/>
-<dimension x1="2.54" y1="15.24" x2="2.54" y2="2.54" x3="-2.54" y3="8.89" textsize="1.778" textratio="15" layer="47" unit="inch"/>
-<dimension x1="6.35" y1="3.81" x2="11.43" y2="3.81" x3="8.89" y3="-2.54" textsize="1.778" textratio="15" layer="47" unit="inch"/>
-<dimension x1="21.59" y1="3.81" x2="21.59" y2="0" x3="31.75" y3="1.905" textsize="1.778" textratio="15" layer="47" unit="inch"/>
-<dimension x1="8.89" y1="16.51" x2="0" y2="16.51" x3="4.445" y3="21.59" textsize="1.778" textratio="15" layer="47" unit="inch"/>
-<text x="0" y="35.56" size="1.778" layer="47" font="vector" ratio="15">Units are in inches</text>
+<text x="0" y="49.53" size="1.778" layer="47" font="vector" ratio="15">Units are in inches</text>
 <text x="17.78" y="-11.43" size="1.778" layer="51" font="vector" ratio="15">N. Seidle</text>
 <text x="10.922" y="24.511" size="1.778" layer="21" font="vector" ratio="15">RJ45</text>
 <text x="3.048" y="5.461" size="1.524" layer="21" font="vector" ratio="15" rot="R90">Load Combinator</text>
+<dimension x1="0" y1="0" x2="0" y2="30.48" x3="-11.43" y3="15.24" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="2.54" y1="27.94" x2="2.54" y2="2.54" x3="-6.35" y3="15.24" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="0" y1="30.48" x2="27.94" y2="30.48" x3="13.97" y3="45.72" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="2.54" y1="27.94" x2="25.4" y2="27.94" x3="13.97" y3="40.64" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="0" y1="0" x2="0" y2="38.735" x3="-2.54" y3="19.3675" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="0" y1="0" x2="8.89" y2="0" x3="4.445" y3="-3.81" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<dimension x1="27.94" y1="0" x2="27.94" y2="8.89" x3="33.02" y3="4.445" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
