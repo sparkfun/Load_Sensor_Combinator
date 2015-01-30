@@ -189,7 +189,7 @@
 <text x="25.273" y="24.765" size="1.27" layer="21" font="vector" ratio="15" rot="R180">GND</text>
 <text x="25.273" y="22.225" size="1.27" layer="21" font="vector" ratio="15" rot="R180">DAT</text>
 <text x="25.273" y="19.685" size="1.27" layer="21" font="vector" ratio="15" rot="R180">5V</text>
-<text x="25.146" y="25.781" size="1.27" layer="22" font="vector" ratio="15" rot="MR270">DS18S20</text>
+<text x="25.146" y="25.781" size="1.27" layer="22" font="vector" ratio="15" rot="MR270">DS18B20</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">

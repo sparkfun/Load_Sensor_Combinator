@@ -8320,7 +8320,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 to create telescoping shield.</text>
 <text x="82.042" y="126.238" size="1.778" layer="97">NC</text>
 <text x="98.552" y="143.764" size="1.778" layer="97">Optional
-DS18S20</text>
+DS18B20</text>
 </plain>
 <instances>
 <instance part="U$7" gate="G$1" x="132.08" y="12.7"/>
