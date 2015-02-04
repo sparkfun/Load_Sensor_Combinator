@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8287,6 +8287,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="JP4" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="LR"/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device="">
 <attribute name="DESIGNER" value="N. Seidle"/>
+<attribute name="VERSION" value="v02"/>
 </part>
 <part name="JP5" library="SparkFun-Connectors" deviceset="M05" device="PTH"/>
 <part name="JP6" library="SparkFun-Connectors" deviceset="RJ45-8" device="PTH" value="RJ45"/>
