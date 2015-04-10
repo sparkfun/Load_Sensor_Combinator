@@ -7051,6 +7051,17 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="2.54" y="24.13" size="1.9304" layer="94"> https://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="1.27" y="11.43" size="2.54" layer="94">Design by:</text>
 </symbol>
+<symbol name="DGND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="5V">
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="OSHW-LOGO" prefix="LOGO">
@@ -7215,6 +7226,32 @@ Standard 8.5x11 US Letter frame</description>
 <attribute name="DESIGNER" value="Nobody" constant="no"/>
 <attribute name="VERSION" value="v01" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="DGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5V" prefix="SUPPLY">
+<description>5V supply symbol</description>
+<gates>
+<gate name="G$1" symbol="5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -8449,6 +8486,8 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="JP5" library="SparkFun-Connectors" deviceset="M05" device="PTH"/>
 <part name="JP6" library="SparkFun-Connectors" deviceset="RJ45-8" device="PTH" value="RJ45"/>
 <part name="JP7" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
+<part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8477,7 +8516,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <text x="132.08" y="132.08" size="1.778" layer="97">Intentionally not-connected
 to create telescoping shield.</text>
 <text x="36.322" y="126.238" size="1.778" layer="97">NC</text>
-<text x="57.912" y="100.584" size="1.778" layer="97">Optional
+<text x="60.452" y="98.044" size="1.778" layer="97">Optional
 DS18B20</text>
 <text x="170.942" y="11.43" size="2.54" layer="94">N. Seidle</text>
 <text x="238.76" y="7.62" size="2.54" layer="94">v10</text>
@@ -8500,7 +8539,9 @@ DS18B20</text>
 <instance part="FRAME1" gate="V" x="147.32" y="0"/>
 <instance part="JP5" gate="G$1" x="124.46" y="142.24" rot="R270"/>
 <instance part="JP6" gate="JP1" x="27.94" y="121.92" rot="R180"/>
-<instance part="JP7" gate="G$1" x="66.04" y="111.76" rot="MR0"/>
+<instance part="JP7" gate="G$1" x="66.04" y="109.22" rot="MR0"/>
+<instance part="GND1" gate="1" x="55.88" y="101.6"/>
+<instance part="SUPPLY1" gate="G$1" x="55.88" y="114.3"/>
 </instances>
 <busses>
 </busses>
@@ -8541,9 +8582,9 @@ DS18B20</text>
 <net name="N$4" class="0">
 <segment>
 <pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="86.36" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="86.36" x2="119.38" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="96.52" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="86.36" x2="116.84" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="86.36" x2="116.84" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="96.52" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="96.52" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="86.36" x2="91.44" y2="86.36" width="0.1524" layer="91"/>
@@ -8553,9 +8594,9 @@ DS18B20</text>
 <segment>
 <pinref part="JP4" gate="G$1" pin="3"/>
 <wire x1="160.02" y1="88.9" x2="162.56" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="88.9" x2="162.56" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="111.76" x2="162.56" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="111.76" x2="119.38" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="88.9" x2="162.56" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="109.22" x2="162.56" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="109.22" x2="119.38" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="1"/>
 <wire x1="119.38" y1="132.08" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
 <junction x="119.38" y="132.08"/>
@@ -8582,10 +8623,8 @@ DS18B20</text>
 <net name="A-" class="0">
 <segment>
 <pinref part="JP2" gate="G$1" pin="3"/>
-<wire x1="114.3" y1="88.9" x2="116.84" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="88.9" x2="116.84" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="109.22" x2="124.46" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="121.92" x2="124.46" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="88.9" x2="124.46" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="88.9" x2="124.46" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="121.92" x2="35.56" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="JP1" pin="4"/>
 <label x="114.3" y="121.92" size="1.778" layer="95"/>
@@ -8596,10 +8635,10 @@ DS18B20</text>
 </net>
 <net name="E-" class="0">
 <segment>
-<wire x1="121.92" y1="114.3" x2="121.92" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="106.68" x2="121.92" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="129.54" x2="121.92" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="114.3" x2="93.98" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="114.3" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="106.68" x2="93.98" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="106.68" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="3"/>
 <wire x1="93.98" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="2"/>
@@ -8614,9 +8653,12 @@ DS18B20</text>
 <pinref part="JP6" gate="JP1" pin="3"/>
 <pinref part="JP7" gate="G$1" pin="3"/>
 <wire x1="35.56" y1="119.38" x2="43.18" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="119.38" x2="43.18" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="114.3" x2="58.42" y2="114.3" width="0.1524" layer="91"/>
-<label x="45.72" y="114.3" size="1.778" layer="95"/>
+<wire x1="43.18" y1="119.38" x2="43.18" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="111.76" x2="55.88" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="SUPPLY1" gate="G$1" pin="5V"/>
+<wire x1="55.88" y1="111.76" x2="58.42" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="114.3" x2="55.88" y2="111.76" width="0.1524" layer="91"/>
+<junction x="55.88" y="111.76"/>
 </segment>
 </net>
 <net name="TEMP_DAT" class="0">
@@ -8624,9 +8666,9 @@ DS18B20</text>
 <pinref part="JP6" gate="JP1" pin="2"/>
 <pinref part="JP7" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="116.84" x2="40.64" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="116.84" x2="40.64" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="111.76" x2="58.42" y2="111.76" width="0.1524" layer="91"/>
-<label x="45.72" y="111.76" size="1.778" layer="95"/>
+<wire x1="40.64" y1="116.84" x2="40.64" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="109.22" x2="58.42" y2="109.22" width="0.1524" layer="91"/>
+<label x="45.72" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -8634,9 +8676,12 @@ DS18B20</text>
 <pinref part="JP6" gate="JP1" pin="1"/>
 <pinref part="JP7" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="114.3" x2="38.1" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="114.3" x2="38.1" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="109.22" x2="58.42" y2="109.22" width="0.1524" layer="91"/>
-<label x="45.72" y="109.22" size="1.778" layer="95"/>
+<wire x1="38.1" y1="114.3" x2="38.1" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="106.68" x2="55.88" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="55.88" y1="106.68" x2="58.42" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="106.68" x2="55.88" y2="104.14" width="0.1524" layer="91"/>
+<junction x="55.88" y="106.68"/>
 </segment>
 </net>
 </nets>
