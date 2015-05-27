@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8498,8 +8498,6 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <text x="128.016" y="145.542" size="1.778" layer="97" rot="R90">A+</text>
 <text x="120.396" y="155.702" size="1.778" layer="97" rot="R90">Red</text>
 <text x="122.936" y="155.702" size="1.778" layer="97" rot="R90">Black</text>
-<text x="125.476" y="155.702" size="1.778" layer="97" rot="R90">White</text>
-<text x="128.016" y="155.702" size="1.778" layer="97" rot="R90">Green</text>
 <text x="147.32" y="68.58" size="1.778" layer="97">Lower Right</text>
 <text x="101.6" y="68.58" size="1.778" layer="97">Upper Right</text>
 <text x="124.46" y="68.58" size="1.778" layer="97">Lower Left</text>
@@ -8507,9 +8505,9 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <text x="111.76" y="60.96" size="1.778" layer="97">3-Wire Load Sensors</text>
 <text x="110.49" y="63.754" size="1.778" layer="97">Common Bathroom Scale</text>
 <text x="104.394" y="168.656" size="1.778" layer="97">Connections to Amplifier</text>
-<text x="75.692" y="82.804" size="1.778" layer="97">BLK</text>
-<text x="75.946" y="85.598" size="1.778" layer="97">WHT</text>
-<text x="75.946" y="88.138" size="1.778" layer="97">RED</text>
+<text x="71.882" y="82.804" size="1.778" layer="97">-/BLK</text>
+<text x="72.136" y="88.138" size="1.778" layer="97">C/WHT</text>
+<text x="72.136" y="85.598" size="1.778" layer="97">+/RED</text>
 <text x="83.82" y="53.34" size="2.032" layer="97">4 load sensors combine to create one load cell</text>
 <text x="130.556" y="145.542" size="1.778" layer="97" rot="R90">Shield</text>
 <text x="130.556" y="155.702" size="1.778" layer="97" rot="R90">Yellow</text>
@@ -8520,6 +8518,16 @@ to create telescoping shield.</text>
 DS18B20</text>
 <text x="170.942" y="11.43" size="2.54" layer="94">N. Seidle</text>
 <text x="238.76" y="7.62" size="2.54" layer="94">v10</text>
+<text x="125.476" y="155.702" size="1.778" layer="97" rot="R90">White</text>
+<text x="128.016" y="155.702" size="1.778" layer="97" rot="R90">Green</text>
+<text x="5.08" y="73.66" size="1.778" layer="97">Wire colors will vary greatly\!
+Use a multimeter to measure the resistance
+between the three wires. Find the two wires
+with the larger resistance between them. 
+This is + and -. The wire with lower
+resistance is center.
+Sometimes red is center, sometimes
+white is center.</text>
 </plain>
 <instances>
 <instance part="U$7" gate="G$1" x="132.08" y="12.7"/>
@@ -8530,14 +8538,17 @@ DS18B20</text>
 <instance part="LOGO3" gate="G$1" x="109.22" y="5.08"/>
 <instance part="JP1" gate="G$1" x="83.82" y="86.36"/>
 <instance part="JP2" gate="G$1" x="106.68" y="86.36"/>
-<instance part="JP3" gate="G$1" x="129.54" y="86.36"/>
+<instance part="JP3" gate="G$1" x="132.08" y="86.36"/>
 <instance part="JP4" gate="G$1" x="152.4" y="86.36"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0">
 <attribute name="DESIGNER" x="0" y="0" size="1.27" layer="96" display="off"/>
 <attribute name="VERSION" x="0" y="0" size="1.27" layer="96" display="off"/>
 </instance>
 <instance part="FRAME1" gate="V" x="147.32" y="0"/>
-<instance part="JP5" gate="G$1" x="124.46" y="142.24" rot="R270"/>
+<instance part="JP5" gate="G$1" x="124.46" y="142.24" smashed="yes" rot="R270">
+<attribute name="VALUE" x="114.3" y="144.78" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="132.842" y="144.78" size="1.778" layer="95" rot="R270"/>
+</instance>
 <instance part="JP6" gate="JP1" x="27.94" y="121.92" rot="R180"/>
 <instance part="JP7" gate="G$1" x="66.04" y="109.22" rot="MR0"/>
 <instance part="GND1" gate="1" x="55.88" y="101.6"/>
@@ -8560,9 +8571,9 @@ DS18B20</text>
 <net name="N$2" class="0">
 <segment>
 <pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="83.82" x2="139.7" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="83.82" x2="139.7" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="73.66" x2="93.98" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="83.82" x2="142.24" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="83.82" x2="142.24" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="73.66" x2="93.98" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="73.66" x2="93.98" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="83.82" x2="91.44" y2="83.82" width="0.1524" layer="91"/>
@@ -8573,10 +8584,10 @@ DS18B20</text>
 <pinref part="JP4" gate="G$1" pin="2"/>
 <wire x1="160.02" y1="86.36" x2="165.1" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="86.36" x2="165.1" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="96.52" x2="142.24" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="96.52" x2="142.24" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="96.52" x2="144.78" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="96.52" x2="144.78" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="142.24" y1="86.36" x2="137.16" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="86.36" x2="139.7" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -8607,10 +8618,10 @@ DS18B20</text>
 </net>
 <net name="A+" class="0">
 <segment>
-<wire x1="127" y1="106.68" x2="139.7" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="106.68" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="127" y1="106.68" x2="142.24" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="106.68" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="3"/>
-<wire x1="139.7" y1="88.9" x2="137.16" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="88.9" x2="139.7" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="127" y1="106.68" x2="127" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="127" y1="124.46" x2="35.56" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="JP1" pin="5"/>
