@@ -15,7 +15,7 @@ If your amplifier and supporting electronics are more than a few inches away fro
 
 The combinator board also includes a footprint for the [DS18B20 one wire temperature sensor](https://www.sparkfun.com/products/245). This allows the user to gather the temperature of the scale in case there is a large variance between the scale and the amplifier. These three pins are exposed to the RJ45 connection as well allowing remote temperature readings to be gathered over one twisted pair ethernet cable.
 
-If you are using the RJ45 connection please note the following wire colors:
+If you plan to use the RJ45 connection you will need to cut and strip the end of the ethernet cable you do not intend to plug into the combinator board. The wires of the exposed ethernet cable connect to the following pins on the combinator board:
 
 * Combinator Pin = Ethernet cable wire color
 * E+ = Brown
@@ -32,5 +32,5 @@ The NC pin is intentionally left *not connected*. For especially long cables the
 License Information
 -------------------
 
-This code is public domain but you buy me a beer if you use this and we meet someday ([Beerware license](http://en.wikipedia.org/wiki/Beerware)).
+This design is [OSHW](http://www.oshwa.org/definition/) and public domain but you buy me a beer if you use this and we meet someday ([Beerware license](http://en.wikipedia.org/wiki/Beerware)).
 
