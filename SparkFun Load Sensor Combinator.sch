@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8520,7 +8520,7 @@ DS18B20</text>
 <text x="238.76" y="7.62" size="2.54" layer="94">v10</text>
 <text x="125.476" y="155.702" size="1.778" layer="97" rot="R90">White</text>
 <text x="128.016" y="155.702" size="1.778" layer="97" rot="R90">Green</text>
-<text x="5.08" y="73.66" size="1.778" layer="97">Wire colors will vary greatly\!
+<text x="4.318" y="67.056" size="1.778" layer="97">Wire colors will vary greatly\!
 Use a multimeter to measure the resistance
 between the three wires. Find the two wires
 with the larger resistance between them. 
@@ -8528,6 +8528,17 @@ This is + and -. The wire with lower
 resistance is center.
 Sometimes red is center, sometimes
 white is center.</text>
+<text x="4.826" y="139.7" size="1.778" layer="97">These colored pairs follow
+the T568B standard found
+in almost all ethernet cable</text>
+<text x="10.16" y="129.54" size="1.778" layer="97">BW</text>
+<text x="10.16" y="132.08" size="1.778" layer="97">B</text>
+<text x="10.16" y="127" size="1.778" layer="97">G</text>
+<text x="10.16" y="121.92" size="1.778" layer="97">B</text>
+<text x="10.16" y="124.46" size="1.778" layer="97">BW</text>
+<text x="10.16" y="119.38" size="1.778" layer="97">GW</text>
+<text x="10.16" y="116.84" size="1.778" layer="97">O</text>
+<text x="10.16" y="114.3" size="1.778" layer="97">OW</text>
 </plain>
 <instances>
 <instance part="U$7" gate="G$1" x="132.08" y="12.7"/>
