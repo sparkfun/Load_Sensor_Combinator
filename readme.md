@@ -1,6 +1,20 @@
 SparkFun Load Sensor Combinator
-=======
+=============================
 
+![SparkFun Load Sensor Combinator](https://cdn.sparkfun.com//assets/parts/1/0/5/1/1/13281-04.jpg)
+
+[*SparkFun Load Sensor Combinator (BOB-13281)*](https://www.sparkfun.com/products/13281)
+
+Repository Contents
+-------------------
+* **/Hardware** - Eagle design files (.brd, .sch)
+
+Documentation
+--------------
+* **[Hookup Guide](https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guideL)** - Basic hookup guide.
+
+How to Use
+----------
 ![Combinator PCB](https://cdn.sparkfun.com//assets/parts/1/0/5/1/1/13281-01.jpg)
 
 ![Combinator PCB in action](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/8/3/HX711_and_Combinator_board_hook_up_guide-09.jpg)
@@ -32,5 +46,12 @@ The NC pin is intentionally left *not connected*. For especially long cables the
 License Information
 -------------------
 
-This design is [OSHW](http://www.oshwa.org/definition/) and public domain but you buy me a beer if you use this and we meet someday ([Beerware license](http://en.wikipedia.org/wiki/Beerware)).
+This product is _**open source**_! 
 
+Please review the LICENSE.md file for license information. 
+
+If you have any questions or concerns on licensing, please contact techsupport@sparkfun.com.
+
+Distributed as-is; no warranty is given.
+
+- Your friends at SparkFun.
