@@ -99,7 +99,7 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="129" name="Mask" color="7" fill="1" visible="no" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
@@ -135,19 +135,19 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
-<layer number="225" name="225bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="226" name="226bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="227" name="227bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="228" name="228bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="229" name="229bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="230" name="230bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="231" name="231bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="no" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
-<layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -160,30 +160,30 @@
 <text x="15.875" y="6.477" size="1.27" layer="21" font="vector" ratio="15" rot="R270">BLK</text>
 <text x="13.335" y="6.477" size="1.27" layer="21" font="vector" ratio="15" rot="R270">WHT</text>
 <text x="18.415" y="6.477" size="1.27" layer="21" font="vector" ratio="15" rot="R270">RED</text>
-<text x="13.335" y="2.794" size="1.27" layer="22" font="vector" ratio="15" rot="MR90">A-</text>
 <text x="10.795" y="2.794" size="1.27" layer="22" font="vector" ratio="15" rot="MR90">A+</text>
+<text x="13.335" y="2.794" size="1.27" layer="22" font="vector" ratio="15" rot="MR90">A-</text>
 <text x="15.875" y="2.794" size="1.27" layer="22" font="vector" ratio="15" rot="MR90">E-</text>
 <text x="18.415" y="2.794" size="1.27" layer="22" font="vector" ratio="15" rot="MR90">E+</text>
-<text x="5.334" y="15.748" size="1.27" layer="21" font="vector" ratio="15">UL</text>
+<text x="20.574" y="15.748" size="1.27" layer="21" font="vector" ratio="15">UL</text>
 <text x="15.494" y="15.748" size="1.27" layer="21" font="vector" ratio="15">UR</text>
 <text x="10.414" y="15.748" size="1.27" layer="21" font="vector" ratio="15">LL</text>
-<text x="20.574" y="15.748" size="1.27" layer="21" font="vector" ratio="15">LR</text>
+<text x="5.334" y="15.748" size="1.27" layer="21" font="vector" ratio="15">LR</text>
 <text x="23.876" y="13.97" size="1.27" layer="21" font="vector" ratio="15" rot="R270">Load</text>
 <text x="15.24" y="7.366" size="1.27" layer="22" font="vector" ratio="15" rot="MR180">UR</text>
 <text x="10.16" y="7.366" size="1.27" layer="22" font="vector" ratio="15" rot="MR180">LL</text>
-<text x="20.32" y="7.366" size="1.27" layer="22" font="vector" ratio="15" rot="MR180">LR</text>
-<text x="5.08" y="7.366" size="1.27" layer="22" font="vector" ratio="15" rot="MR180">UL</text>
+<text x="5.08" y="7.366" size="1.27" layer="22" font="vector" ratio="15" rot="MR180">LR</text>
+<text x="20.32" y="7.366" size="1.27" layer="22" font="vector" ratio="15" rot="MR180">UL</text>
 <text x="25.654" y="15.621" size="1.27" layer="21" font="vector" ratio="15" rot="R270">Sensors</text>
-<text x="9.906" y="14.859" size="1.778" layer="21" font="vector" ratio="15" rot="R180">-</text>
-<text x="9.906" y="12.319" size="1.778" layer="21" font="vector" ratio="15" rot="R180">+</text>
-<text x="9.906" y="9.779" size="1.778" layer="21" font="vector" ratio="15" rot="R180">C</text>
-<text x="14.986" y="14.859" size="1.778" layer="21" font="vector" ratio="15" rot="R180">-</text>
-<text x="14.986" y="12.319" size="1.778" layer="21" font="vector" ratio="15" rot="R180">+</text>
-<text x="20.066" y="9.779" size="1.778" layer="21" font="vector" ratio="15" rot="R180">C</text>
-<text x="20.066" y="14.859" size="1.778" layer="21" font="vector" ratio="15" rot="R180">-</text>
-<text x="20.066" y="12.319" size="1.778" layer="21" font="vector" ratio="15" rot="R180">+</text>
-<text x="14.986" y="9.779" size="1.778" layer="21" font="vector" ratio="15" rot="R180">C</text>
-<text x="0.762" y="4.953" size="1.778" layer="16" font="vector" ratio="15" rot="MR90">v11</text>
+<text x="9.906" y="14.859" size="1.778" layer="21" font="vector" ratio="15" rot="R180">B</text>
+<text x="9.906" y="12.319" size="1.778" layer="21" font="vector" ratio="15" rot="R180">W</text>
+<text x="9.906" y="9.779" size="1.778" layer="21" font="vector" ratio="15" rot="R180">R</text>
+<text x="14.986" y="14.859" size="1.778" layer="21" font="vector" ratio="15" rot="R180">B</text>
+<text x="14.986" y="12.319" size="1.778" layer="21" font="vector" ratio="15" rot="R180">W</text>
+<text x="14.986" y="9.779" size="1.778" layer="21" font="vector" ratio="15" rot="R180">R</text>
+<text x="20.066" y="14.859" size="1.778" layer="21" font="vector" ratio="15" rot="R180">B</text>
+<text x="20.066" y="12.319" size="1.778" layer="21" font="vector" ratio="15" rot="R180">W</text>
+<text x="20.066" y="9.779" size="1.778" layer="21" font="vector" ratio="15" rot="R180">R</text>
+<text x="0.762" y="4.953" size="1.778" layer="16" font="vector" ratio="15" rot="MR90">v10</text>
 <text x="8.255" y="6.477" size="1.27" layer="21" font="vector" ratio="15" rot="R270">YLW</text>
 <text x="8.255" y="2.794" size="1.27" layer="22" font="vector" ratio="15" rot="MR90">SLD</text>
 <text x="0" y="49.53" size="1.778" layer="47" font="vector" ratio="15">Units are in inches</text>
@@ -777,6 +777,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="A+">
 <contactref element="JP3" pad="3"/>
+<wire x1="11.43" y1="8.89" x2="11.43" y2="1.27" width="0.508" layer="1"/>
 <contactref element="JP6" pad="5"/>
 <wire x1="11.43" y1="8.89" x2="10.16" y2="8.89" width="0.508" layer="1"/>
 <wire x1="10.16" y1="8.89" x2="7.62" y2="6.35" width="0.508" layer="1"/>
@@ -788,7 +789,6 @@ design rules under a new name.</description>
 <wire x1="13.335" y1="21.59" x2="13.335" y2="23.495" width="0.508" layer="1"/>
 <wire x1="13.335" y1="23.495" x2="12.7" y2="24.13" width="0.508" layer="1"/>
 <contactref element="JP5" pad="4"/>
-<wire x1="11.43" y1="8.89" x2="11.43" y2="1.27" width="0.508" layer="1"/>
 </signal>
 <signal name="A-">
 <contactref element="JP2" pad="3"/>
@@ -798,8 +798,8 @@ design rules under a new name.</description>
 <wire x1="14.605" y1="19.05" x2="19.05" y2="14.605" width="0.508" layer="16"/>
 <wire x1="19.05" y1="14.605" x2="19.05" y2="10.16" width="0.508" layer="16"/>
 <contactref element="JP5" pad="3"/>
-<wire x1="16.51" y1="8.89" x2="13.97" y2="6.35" width="0.508" layer="1"/>
-<wire x1="13.97" y1="6.35" x2="13.97" y2="1.27" width="0.508" layer="1"/>
+<wire x1="13.97" y1="1.27" x2="13.97" y2="6.35" width="0.508" layer="1"/>
+<wire x1="13.97" y1="6.35" x2="16.51" y2="8.89" width="0.508" layer="1"/>
 </signal>
 <signal name="E-">
 <contactref element="JP1" pad="3"/>
