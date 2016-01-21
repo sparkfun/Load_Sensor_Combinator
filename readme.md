@@ -12,6 +12,8 @@ Repository Contents
 Documentation
 --------------
 * **[Hookup Guide](https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guideL)** - Basic hookup guide.
+* **[SparkFun Fritzing repo](https://github.com/sparkfun/Fritzing_Parts)** - Fritzing diagrams for SparkFun products.
+* **[SparkFun 3D Model repo](https://github.com/sparkfun/3D_Models)** - 3D models of SparkFun products. 
 
 How to Use
 ----------
@@ -19,9 +21,9 @@ How to Use
 
 ![Combinator PCB in action](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/8/3/HX711_and_Combinator_board_hook_up_guide-09.jpg)
 
-If you open up an electronic bathroom scale you’ll find a large rats nest of wires. The Load Sensor Combinator was created to combine the 12 wires found in a bathroom scale into the standard 4-wires that wheatstone bridge configuration.
+If you open up an electronic bathroom scale youâ€™ll find a large rats nest of wires. The Load Sensor Combinator was created to combine the 12 wires found in a bathroom scale into the standard 4-wires that wheatstone bridge configuration.
 
-This board also works with four of our individual [load sensors](https://www.sparkfun.com/products/10245). If you aren’t mechanically inclined we recommend purchasing an off-the-shelf bathroom scale and hacking the combinator into it rather than trying to design a base to properly mount four load sensors.
+This board also works with four of our individual [load sensors](https://www.sparkfun.com/products/10245). If you arenâ€™t mechanically inclined we recommend purchasing an off-the-shelf bathroom scale and hacking the combinator into it rather than trying to design a base to properly mount four load sensors.
 
 This board works great with our [Load Cell Amplifier](https://www.sparkfun.com/products/13230) breakout board. The five pins on the edge of the combinator line directly up to the five pins on the amplifier.
 
