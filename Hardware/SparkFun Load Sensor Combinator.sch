@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8507,9 +8507,9 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <text x="111.76" y="60.96" size="1.778" layer="97">3-Wire Load Sensors</text>
 <text x="110.49" y="63.754" size="1.778" layer="97">Common Bathroom Scale</text>
 <text x="104.394" y="168.656" size="1.778" layer="97">Connections to Amplifier</text>
-<text x="75.692" y="82.804" size="1.778" layer="97">BLK</text>
-<text x="75.946" y="85.598" size="1.778" layer="97">WHT</text>
-<text x="75.946" y="88.138" size="1.778" layer="97">RED</text>
+<text x="72.644" y="82.804" size="1.778" layer="97">-/BLK</text>
+<text x="72.644" y="85.598" size="1.778" layer="97">+/WHT</text>
+<text x="72.644" y="88.392" size="1.778" layer="97">C/RED</text>
 <text x="83.82" y="53.34" size="2.032" layer="97">4 load sensors combine to create one load cell</text>
 <text x="130.556" y="145.542" size="1.778" layer="97" rot="R90">Shield</text>
 <text x="130.556" y="155.702" size="1.778" layer="97" rot="R90">Yellow</text>
@@ -8519,7 +8519,17 @@ to create telescoping shield.</text>
 <text x="60.452" y="98.044" size="1.778" layer="97">Optional
 DS18B20</text>
 <text x="170.942" y="11.43" size="2.54" layer="94">N. Seidle</text>
-<text x="238.76" y="7.62" size="2.54" layer="94">v10</text>
+<text x="238.76" y="7.62" size="2.54" layer="94">v11</text>
+<text x="148.844" y="7.112" size="2.54" layer="94">Revised by:</text>
+<text x="170.942" y="7.112" size="2.54" layer="94">A. Wende</text>
+<text x="10.16" y="73.66" size="1.778" layer="97">Wire colors will vary greatly\!
+Use a multimeter to measure the resistance
+between the three wires. Find the two wires
+with the larger resistance between them. 
+This is + and -. The wire with lower
+resistance is center.
+Sometimes red is center, sometimes
+white is center.</text>
 </plain>
 <instances>
 <instance part="U$7" gate="G$1" x="132.08" y="12.7"/>
